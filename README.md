@@ -4,6 +4,12 @@
 BATM: Bridging the gap between [MyAnimeList][MAL] and [Trakt][tk] with a
 user-friendly solution for seamless data integration and episode order precision. 🚀
 
+> **Warning**
+>
+> This project is still in early development, no relation mapping
+> has been done yet, and the data is still incomplete. If you want to help,
+> please read [Contribution Guide](#contribution-guide) section below.
+
 ## Why?
 
 [AniTrakt][at], crafted by the talented huere, boasts an impressive database
