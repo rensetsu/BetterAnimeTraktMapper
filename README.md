@@ -4,7 +4,7 @@
 BATM: Bridging the gap between [MyAnimeList][MAL] and [Trakt][tk] with a
 user-friendly solution for seamless data integration and episode order precision. 🚀
 
-> **Warning**
+> [!Warning]
 >
 > This project is still in early development, no relation mapping
 > has been done yet, and the data is still incomplete. If you want to help,
@@ -32,6 +32,12 @@ except maybe me (lol), but trust me, it's here to simplify things for you.
 
 ## How Does It Work?
 
+> [!Note]
+>
+> tl;dr: BATM will attempt to locate the most suitable match for the title by
+> analyzing data from numerous sources (or manually inputting if none available)
+> and subsequently requesting the user to confirm the outcome.
+
 1. **Searching for Shows:**
    * BATM asks you to tell the name of a show you like to search for.
    * It then looks in different places (like [ATIP][atip], [AniTrakt][at], and
@@ -57,12 +63,6 @@ except maybe me (lol), but trust me, it's here to simplify things for you.
 
 <details>
 <summary>A little bit technical explanation</summary>
-<blockquote><strong>Note</strong><br/>
-tl;dr: BATM will attempt to locate the most suitable match for the title by
-analyzing data from numerous sources (or manually inputting if none available)
-and subsequently requesting the user to confirm the outcome.
-</blockquote>
-
 1. BATM will ask user to provide title to lookup. Then based on the data:
    * BATM will fetch data from [ATIP][atip] for latest exisiting mapping from
      [AniTrakt][at]
