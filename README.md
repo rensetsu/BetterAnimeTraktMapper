@@ -63,6 +63,7 @@ except maybe me (lol), but trust me, it's here to simplify things for you.
 
 <details>
 <summary>A little bit technical explanation</summary>
+
 1. BATM will ask user to provide title to lookup. Then based on the data:
    * BATM will fetch data from [ATIP][atip] for latest exisiting mapping from
      [AniTrakt][at]
