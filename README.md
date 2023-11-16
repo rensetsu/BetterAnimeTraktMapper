@@ -40,8 +40,8 @@ except maybe me (lol), but trust me, it's here to simplify things for you.
 
 1. **Searching for Shows:**
    * BATM asks you to tell the name of a show you like to search for.
-   * It then looks in different places (like [ATIP][atip], [AniTrakt][at], and
-     [SIMKL]) to find information about that show.
+   * It then looks in different places (like [ATIP][atip] and [Notify.moe][ntf])
+     to find information about that show.
 2. **Finding the Right Season:**
    * It tries to guess the right part based on the name of the show. For
      example, if the show is called "Poputepipikku 2nd Season," BATM knows to
@@ -57,7 +57,7 @@ except maybe me (lol), but trust me, it's here to simplify things for you.
 4. **Adding IDs for Better Connections:**
    * BATM wants to make sure it connects well with other cool apps, so it
      collects extra information (IDs) from different sites (AniDB, AniList,
-     IMDb, Kitsu, SIMKL, TMDB, and TVDB) as well.
+     IMDb, Kitsu, TMDB, and TVDB) as well.
    * But, for now, it doesn't fix any episode problems on those other sites.
      It's saving that for a future project on Ryuuganime.
 
@@ -66,7 +66,9 @@ except maybe me (lol), but trust me, it's here to simplify things for you.
 1. BATM will ask user to provide title to lookup. Then based on the data:
    * BATM will fetch data from [ATIP][atip] for latest exisiting mapping from
      [AniTrakt][at]
-   * If none, BATM will check on [SIMKL] if there's existing relationship to Trakt.
+   * If none, BATM will check on [Notify][ntf] if there's existing relationship
+     to Trakt. Note that Notify might have lesser connection for Trakt, TVDB, or
+     TMDB.
    * If not exist at all, BATM will ask user to manually link/map entry to Trakt.
 2. BATM will check if the title has multiple seasons, and ask user to select
    which season to map.
@@ -84,9 +86,9 @@ except maybe me (lol), but trust me, it's here to simplify things for you.
    * If the season has more episodes than MAL counterpart, it will prompt user
      to do episode range correction or add episode offset.
    * Else, user will be asked to add episode offset.
-4. BATM will populate additional IDs from AniDB, AniList, IMDb, Kitsu, SIMKL,
-   TMDB, and TVDB for better integration with 3rd party applications, but won't
-   add additional episode correction to each platforms.
+4. BATM will populate additional IDs from AniDB, AniList, IMDb, Kitsu, TMDB and
+   TVDB for better integration with 3rd party applications, but won't add 
+   additional episode correction to each platforms.
    * This will be solved by my future project in [Ryuuganime][ryuu] to fix all
      this mess once BATM finished, and [animeApi](https://animeapi.my.id)
      dropped [anime-offline-database][aod] as dependency and changed license to
@@ -180,7 +182,7 @@ different format:
 * [ATIP][atip]/[AniTrakt by Huere][at]
 * [Jikan](https://jikan.moe) to get info of the title in MAL, alternative to
   MAL's official API
-* [SIMKL] to get AniDB, AniList, Kitsu, and SIMKL ID
+* [Notify][ntf] to get AniDB, AniList, Kitsu, and Trakt ID
 * [Trakt][tk]
 
 [aod]: https://github.com/manami-project/anime-offline-database
@@ -192,6 +194,6 @@ different format:
 [mgin]: https://myanimelist.net/anime/918
 [tmmuchi]: https://www.themoviedb.org/tv/96660
 [muchi]: https://myanimelist.net/anime/39942
-[SIMKL]: https://simkl.com
+[ntf]: https://notify.moe
 [tk]: https://trakt.tv
 [MAL]: https://myanimelist.net
